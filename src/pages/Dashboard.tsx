@@ -48,7 +48,7 @@ const Dashboard = () => {
             onClick={() => console.log("Indicateurs clicked")}
           >
             <BarChart size={isMobile ? 36 : 48} className="mb-4" />
-            <span className="text-lg md:text-xl font-semibold text-center">Indicateurs globaux de performance</span>
+            <span className="text-sm md:text-lg font-semibold text-center break-words hyphens-auto">Indicateurs globaux de performance</span>
           </Button>
 
           <Button 
@@ -56,7 +56,7 @@ const Dashboard = () => {
             onClick={() => console.log("Escales par quai clicked")}
           >
             <MapPin size={isMobile ? 36 : 48} className="mb-4" />
-            <span className="text-lg md:text-xl font-semibold text-center">Suivi des escales par quai</span>
+            <span className="text-sm md:text-lg font-semibold text-center break-words hyphens-auto">Suivi des escales par quai</span>
           </Button>
 
           <Button 
@@ -64,7 +64,7 @@ const Dashboard = () => {
             onClick={() => console.log("Types de navires clicked")}
           >
             <Ship size={isMobile ? 36 : 48} className="mb-4" />
-            <span className="text-lg md:text-xl font-semibold text-center">Suivi des escales par type de navires</span>
+            <span className="text-sm md:text-lg font-semibold text-center break-words hyphens-auto">Suivi des escales par type de navires</span>
           </Button>
         </div>
       </main>
