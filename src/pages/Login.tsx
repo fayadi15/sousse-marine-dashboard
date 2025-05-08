@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -35,10 +34,6 @@ const Login = () => {
       
       <div className="absolute top-5 left-5 z-10">
         <OMMPLogo />
-      </div>
-      
-      <div className="absolute top-5 left-1/2 transform -translate-x-1/2 text-white text-2xl font-semibold z-10">
-        <h1>Office de la Marine Marchande et des Ports Sousse</h1>
       </div>
       
       <Card className="w-full max-w-md p-8 z-10 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">

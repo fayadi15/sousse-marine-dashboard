@@ -3,9 +3,10 @@ import React from 'react';
 
 interface OMMPLogoProps {
   className?: string;
+  showText?: boolean;
 }
 
-const OMMPLogo: React.FC<OMMPLogoProps> = ({ className = "" }) => {
+const OMMPLogo: React.FC<OMMPLogoProps> = ({ className = "", showText = true }) => {
   return (
     <div className={`flex items-center ${className}`}>
       <img 
@@ -13,6 +14,11 @@ const OMMPLogo: React.FC<OMMPLogoProps> = ({ className = "" }) => {
         alt="OMMP Logo" 
         className="h-16 w-auto" 
       />
+      {showText && (
+        <h1 className="ml-4 text-xl font-semibold text-white">
+          Office de la Marine Marchande et des Ports Sousse
+        </h1>
+      )}
     </div>
   );
 };
