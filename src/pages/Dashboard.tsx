@@ -70,7 +70,7 @@ const Dashboard = () => {
 
           <Button
             className="flex flex-col items-center justify-center p-6 md:p-8 h-auto bg-blue-700/80 hover:bg-blue-800/90 text-white border border-blue-500 shadow-lg transition-all"
-            onClick={() => console.log("Escales par quai clicked")}
+            onClick={() => navigate("/stats")}
           >
             <MapPin size={isMobile ? 36 : 48} className="mb-4" />
             <span className="text-sm md:text-lg font-semibold text-center break-words hyphens-auto">
@@ -80,7 +80,7 @@ const Dashboard = () => {
 
           <Button
             className="flex flex-col items-center justify-center p-6 md:p-8 h-auto bg-blue-700/80 hover:bg-blue-800/90 text-white border border-blue-500 shadow-lg transition-all md:col-span-2 lg:col-span-1 mx-auto lg:mx-0 w-full"
-            onClick={() => console.log("Types de navires clicked")}
+            onClick={() => navigate("/stats")}
           >
             <Ship size={isMobile ? 36 : 48} className="mb-4" />
             <span className="text-sm md:text-lg font-semibold text-center break-words hyphens-auto">
